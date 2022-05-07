@@ -1,0 +1,41 @@
+#this program calculates a dog's age in human years
+
+
+def dog_age_to_human_age(dog_age):
+    try:
+        dog_age = float(dog_age)
+        
+        if (dog_age > 5):
+            human_age = (dog_age * 7)
+            human_age = round(human_age, 2)
+            print("Your dog age" , dog_age , " is " , human_age, " in human yrs.")
+        elif (dog_age > 4):
+            human_age = (dog_age * 7.2)
+            human_age = round(human_age, 2)
+            print("Your dog age" , dog_age ,  " is " , human_age , " in human yrs.")
+        elif (dog_age > 3):
+            human_age = (dog_age * 8)
+            human_age = round(human_age, 2)
+            print("Your dog age", dog_age, " is " , human_age , " in human yrs.")
+        elif (dog_age > 2):
+            human_age = (dog_age * 9.3)
+            human_age = round(human_age, 2)
+            print("Your dog age" , dog_age , " is " , human_age , " in human yrs.")
+        elif (dog_age > 1):
+            human_age = (dog_age * 12)
+            human_age = round(human_age, 2)
+            print("Your dog age" , dog_age , " is " , human_age , " in human yrs.")
+        elif (dog_age > 0):
+            human_age = (dog_age * 15)
+            human_age = round(human_age, 2)
+            print("Your dog age" , dog_age, " is " , human_age  , " in human yrs.")
+        elif (dog_age < 0):
+            print("Your dog's age cannot be a negative number.")
+    except ValueError:
+        print("Your dog's age," , dog_age, ", is invalid. Please enter a valid number.")
+    
+#ask for the dog's age
+dog_age = input("What is your dog's age as a numeric value?")
+
+#call the function defined above with argument for dog age
+dog_age_to_human_age(dog_age)
