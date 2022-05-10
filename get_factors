@@ -1,0 +1,16 @@
+#factors exercise to develop a function that returns factors as a list
+
+
+def get_factors(x):
+    """Takes an integer and returns a list of factors."""
+    factors = []
+    for i in range(1, x + 1):    # check for factors from 1 to the integer entered
+        if (x % i == 0):       #test for even number remainder
+            factors.append(i)   #append factor to the list
+    print("Here are the factors of", integer, ": ", factors)      #print the list 
+    return factors
+   
+    
+integer = int(input("Please enter an integer."))   #ask for an integer
+result = get_factors(integer)     #run the factor program with the integer argument
+
