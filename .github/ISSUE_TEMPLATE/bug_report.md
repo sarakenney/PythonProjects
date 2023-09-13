@@ -33,3 +33,5 @@ Add any other context about the problem here.
 - [ ] 
 - [ ] 
 - [ ]
+
+*Please select the Project "___" and the Milestone "Testing Phase I" before submitting.
